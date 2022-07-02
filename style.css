@@ -738,6 +738,11 @@ p {
     color: black;
 }
 
+.social a:hover {
+    opacity: 0.6;
+    color: #000000;
+}
+
 a {
     color: black;
 }
