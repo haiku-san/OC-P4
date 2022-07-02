@@ -88,12 +88,13 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
+    
 }
+
 
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
-    z-index: -1;
     background-color: #0000007c;
 }
 
@@ -155,6 +156,12 @@ a:hover {
     /* color: rgba(255, 255, 255, 1); */
 }
 
+.navbar a:hover {
+    opacity: 0.7;
+    color: #000000;
+    transform: scale(1.1);
+}
+
 .d-bloc .navbar-toggle .icon-bar {
     background: rgba(255, 255, 255, 1);
 }
@@ -195,10 +202,6 @@ a:hover {
     border-color: rgba(0, 0, 0, .3);
 }
 
-.d-bloc .panel,
-.l-bloc {
-    color: rgba(0, 0, 0, .5);
-}
 
 .d-bloc .panel button:hover,
 .l-bloc button:hover {
@@ -683,7 +686,32 @@ a {
 
 p {
     font-size: 14px;
+    color: #000000;
+}
+
+#bloc-3-what-i-do p {
     color: #FFFFFF;
+}
+
+.text-normal-style {
+    font-size: 22px;
+    padding: 0 180px 0 180px;
+    line-height: 26px;
+}
+
+.text-quote-style {
+    font-size: 20px;
+    padding: 0 60px 0 60px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+.text-author-style {
+    color: #727272;
+    font-size: 20px;
+    padding: 0 60px 0 60px;
+    line-height: 24px;
+    margin-top: 0;
 }
 
 .tight-width-whitespace {
@@ -722,13 +750,14 @@ nav a {
     font-size: 22px;
     line-height: 1.4em;
     color: #FFFFFF;
+    z-index: 1;
 }
 
 #bloc-4-portfolio h2 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333333!important;
+    color: #000000;
 }
 
 .med-width-whitespace {
@@ -827,7 +856,12 @@ h4 {
 
 .bg-banniere {
     background-image: url("img/agence-la-panthere.jpg");
-    z-index: -2;
+    z-index: 0;
+}
+
+.bg-banniere::before {
+    content: "";
+    z-index: -1;
 }
 
 .bg-presentation {
