@@ -431,7 +431,7 @@ nav .caret {
 .btn-d,
 .btn-d:hover,
 .btn-d:focus {
-    color: #FFF;
+    color: rgba(0, 0, 0, 0.592);
     /* background: rgba(0, 0, 0, .3); */
 }
 
@@ -487,9 +487,15 @@ nav .caret {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
     z-index: 500;
     transition: all .3s ease-in-out;
+}
+
+.scrollToTop:hover, .btn-d:hover {
+    transform: scale(1.5);
+    color: black;
+    background-color: rgba(163, 163, 163, 0.268);
+    border-radius: 50px;
 }
 
 .scrollToTop span {
