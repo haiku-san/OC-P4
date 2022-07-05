@@ -807,11 +807,11 @@ h4 {
 }
 
 .ltc-white {
-    color: rgb(55, 245, 255);
+    color: #ffd000;
 }
 
 .ltc-white:hover {
-    color: rgb(64, 147, 255);
+    color: #C54800;
 }
 
 .ltc-atomic-tangerine {
