@@ -679,6 +679,7 @@ p {
     padding: 0 60px 0 60px;
     line-height: 24px;
     margin-bottom: 0;
+    font-style: italic;
 }
 
 .text-author-style {
